@@ -277,3 +277,30 @@ const shopItemsData = [
       "This soothing Lavender Throw from EveryYay will help your pet wind down in no time. As they gently snuggle into the blanket, the lavender scent is released, putting them right at ease and ready to take on a full night's sleep.",
   },
 ];
+
+// function removeKeysFromArray(array, ...keysToRemove) {
+//   return array.map((obj) => {
+//     keysToRemove.forEach((key) => {
+//       delete obj[key];
+//     });
+//     return obj;
+//   });
+// }
+
+// const updatedArray = removeKeysFromArray(
+//   shopItemsData,
+//   "start-url",
+//   "product-link-href"
+// );
+
+const { v4: uuidv4 } = require("uuid");
+
+function generateNewIds(array) {
+  return array.map((obj) => {
+    return {
+      ...obj,
+      id: uuidv4(),
+    };
+  });
+}
+console.log(generateNewIds(shopItemsData));
