@@ -25,7 +25,8 @@ i {
 
 .navbar {
   display: flex;
-  flex-direction: row;
+  /* flex-direction: row;
+  align-items: center; */
   justify-content: space-between;
   background-color: #03071e;
   color: white;
@@ -61,6 +62,7 @@ i {
   grid-template-columns: repeat(4, 204px);
   gap: 30px;
   justify-content: center;
+  margin-bottom: 60px;
 }
 
 .item {
@@ -166,8 +168,14 @@ p {
   text-align: center;
   margin-bottom: 20px;
 }
-
-.HomeBtn {
+.bill {
+  background-color: #03071e;
+  color: white;
+  padding: 0 50px;
+}
+.HomeBtn,
+.checkout,
+.removeAll {
   background-color: #03071e;
   color: white;
   border: none;
@@ -175,6 +183,9 @@ p {
   border-radius: 3px;
   cursor: pointer;
   margin-top: 12px;
+}
+.removeAll {
+  background-color: red;
 }
 
 .shopping-cart {

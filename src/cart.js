@@ -31,14 +31,15 @@ let generateCartItems = () => {
            </h4>
            <i onclick="removeItem(${id})" class="cart bi bi-x-lg"></i>
        </div>
+       <div style="border-top: 1px solid rgb(209, 209, 209);"></div>
 
        <div class="buttons">
            <i onclick="decrement(${id})" class="bi bi-dash-lg"></i>
            <div id=${id} class="quantity">${item}</div>
            <i onclick="increment(${id})" class="bi bi-plus-lg"></i>
        </div>
-       <h3> $ ${parseFloat(price) * item}</h3>
-           </div>
+       <h3>$ ${(parseFloat(price) * item).toFixed(2)}</h3>
+       </div>
 
               </div>
             `;
@@ -102,4 +103,53 @@ let update = (id) => {
   // console.log(search.item);
   document.getElementById(id).innerHTML = search.item;
   calculation();
+
+  // live displaying of the total bill
+  TotalAmount();
 };
+
+let removeItem = (id) => {
+  let selectedItem = id;
+  // console.log(selectedItem.id);
+  basket = basket.filter((x) => x.id !== selectedItem.id);
+  generateCartItems();
+
+  // live substracting of removed item off the total bill
+  TotalAmount();
+
+  // live subsctructing the item from the cart icon
+  calculation();
+
+  localStorage.setItem("data", JSON.stringify(basket));
+};
+
+let clearCart = () => {
+  basket = [];
+  generateCartItems();
+
+  // live subsctructing the item from the cart icon
+  calculation();
+
+  localStorage.setItem("data", JSON.stringify(basket));
+};
+
+let TotalAmount = () => {
+  if (basket.length !== 0) {
+    let amount = basket
+      .map((x) => {
+        let { item, id } = x;
+        let search = shopItemsData.find((y) => y.id === id) || [];
+        let price = parseFloat(search.price.replace("$", ""));
+        return item * price;
+      })
+      .reduce((x, y) => x + y, 0);
+    console.log(amount);
+    label.innerHTML = `
+    <h2 class="bill">Total Bill : $${amount.toFixed(2)}</h2>
+    <button class="checkout">Checkout</button>
+    <button onclick="clearCart()" class="removeAll">Clear Cart</button>
+    `;
+  } else return;
+};
+
+TotalAmount();

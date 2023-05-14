@@ -35,6 +35,7 @@ let generateShop = () => {
       <p>
         ${description}
       </p>
+      <div style="border-top: 1px solid rgb(209, 209, 209);"></div>
       <div class="price-quantity">
         <h2>${price}</h2>
         <div class="buttons">
