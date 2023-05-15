@@ -10,7 +10,7 @@ const shopItemsData = [
     name: 'EveryYay Blue Nautical Striped Nester Dog Bed, 32" L X 24" W',
     brand: "EveryYay",
     price: "$39.99",
-    "image-src": "images/EveryYay  Blue Nautical Striped Nester Dog Bed.avif",
+    "image-src": "images/EveryYay  Blue Nautical Striped Nester Dog Bed.png",
     description:
       "The EveryYay Blue Nautical Striped Nester Dog Bed is a boat of comfort that'll rock your pup's world - especially if they love to curl up for the slumber pawty. Featuring a faux-shearling sleep surface that's irresistibly cozy, this dog bed's nest-like shape and bolster walls help them feel totally secure in a sea of softness so they can always set sail to snooze-filled dreams.",
   },
@@ -25,7 +25,7 @@ const shopItemsData = [
     name: 'EveryYay Essentials Snooze Fest Nester Dog Bed, 32" L X 24" W',
     brand: "EveryYay",
     price: "$20.00",
-    "image-src": "images/EveryYay Essentials Snooze Fest Nester Dog Bed.avif",
+    "image-src": "images/EveryYay Essentials Snooze Fest Nester Dog Bed.png",
     description:
       "The EveryYay Essentials Snooze Fest Nester Dog Bed invites them into a cuddly - and sparkly - comfort zone. Designed with a shimmery velvet exterior, this bed is a dream destination for pups who love to curl up thanks to its rounded shape where they can snuggle up and snooze.",
   },
@@ -40,7 +40,7 @@ const shopItemsData = [
     name: 'EveryYay Teal Cool Orthopedic Dog Crate Mat, 18" L X 11.5" W X 2" H',
     brand: "EveryYay",
     price: "$35.99",
-    "image-src": "images/EveryYay Grey Cool Orthopedic Dog Crate Mat.avif",
+    "image-src": "images/EveryYay Grey Cool Orthopedic Dog Crate Mat.png",
     description:
       "The Cool Orthopedic Crate Mat from EveryYay keeps your pup cool and cozy whether they are in their crate, kennel, or cuddled up by your feet. The cool-to-touch fabric and orthopedic foam work together to keep your pup comfy and the machine-washable, removable cover allows you to easily clean up after use.",
   },
@@ -56,7 +56,7 @@ const shopItemsData = [
     brand: "EveryYay",
     price: "$13.39",
     "image-src":
-      "images/EveryYay Dining In Elevated Double Diner for Dogs, 5 Cups.avif",
+      "images/EveryYay Dining In Elevated Double Diner for Dogs, 5 Cups.png",
     description:
       "EveryYay Brushed Stainless Steel features two polished stainless steel dog bowls in a raised platform.",
   },
@@ -72,7 +72,7 @@ const shopItemsData = [
     brand: "EveryYay",
     price: "$29.99",
     "image-src":
-      "images/EveryYay Embrace the Pace Teal Reflective Dog Harness, X-Small.avif",
+      "images/EveryYay Embrace the Pace Teal Reflective Dog Harness, X-Small.png",
     description:
       "The EveryYay Embrace the Pace Teal Reflective Dog Harness helps keep your trusted sidekick safe all throughout the day and into the night. Featuring reflective trim from all angles, they'll stay lit as you adventure together.",
   },
@@ -87,7 +87,7 @@ const shopItemsData = [
     name: "EveryYay Serve & Preserve Food Storage, 15 lbs.",
     brand: "EveryYay",
     price: "$24.99",
-    "image-src": "images/EveryYay Serve & Preserve Food Storage, 15 lbs.avif",
+    "image-src": "images/EveryYay Serve & Preserve Food Storage, 15 lbs.png",
     description:
       "The EveryYay Serve & Preserve Food Storage is designed with a seal and latch to help protect their food from moisture and pests so it stays fresh for every feeding. Complete with a food scoop, this food storage container makes mealtime hassle-free.",
   },
@@ -102,7 +102,7 @@ const shopItemsData = [
     name: 'EveryYay Teal Happy Place Durable Dog Mat, 18" L X 11.5" W X 2" H',
     brand: "EveryYay",
     price: "$32.99",
-    "image-src": "images/EveryYay Happy Place Plush Dog Mat, XX-Small.avif",
+    "image-src": "images/EveryYay Happy Place Plush Dog Mat, XX-Small.png",
     description:
       "The EveryYay Happy Place Teal Durable Dog Mat adds the perfect cushion to your pet's kennel, crate, or chill zone of their choice. We know they like to let loose sometimes. That's why we designed this mat to be water-resistant. We also made its cover removable and machine washable so you can give it a quick and easy clean.",
   },
@@ -118,7 +118,7 @@ const shopItemsData = [
     brand: "EveryYay",
     price: "$29.99",
     "image-src":
-      "images/EveryYay Dining In Elevated Double Diner for Dogs, 5 Cups.avif",
+      "images/EveryYay Dining In Elevated Double Diner for Dogs, 5 Cups.png",
     description:
       "The EveryYay Elevated Double Diner for Dogs raises the bar on mealtime thanks to a lifted design that is ideal for large dogs or pups with joint issues. Two stainless steel bowls are easy to remove and safe to clean in the dishwasher, plus non-skid feet keeps your pup's food and water from sliding away.",
   },
@@ -133,7 +133,7 @@ const shopItemsData = [
     name: 'EveryYay Grey Cool Orthopedic Dog Crate Mat, 18" L X 11.5" W X 2" H',
     brand: "EveryYay",
     price: "$35.99",
-    "image-src": "images/EveryYay Grey Cool Orthopedic Dog Crate Mat.avif",
+    "image-src": "images/EveryYay Grey Cool Orthopedic Dog Crate Mat.png",
     description:
       "The Cool Orthopedic Crate Mat from EveryYay keeps your pup cool and cozy whether they are in their crate, kennel, or cuddled up by your feet. The cool-to-touch fabric and orthopedic foam work together to keep your pup comfy and the machine-washable, removable cover allows you to easily clean up after use.",
   },
@@ -149,7 +149,7 @@ const shopItemsData = [
     brand: "Pet Honesty",
     price: "$28.99",
     "image-src":
-      "images/Pet Honesty Bladder Health Cranberry Soft Chews for Dogs, Count of 90.avif",
+      "images/Pet Honesty Bladder Health Cranberry Soft Chews for Dogs, Count of 90.png",
     description:
       "Please note that the product information displayed is provided by manufacturers, suppliers and other third parties and is not independently verified by Petco.Full disclaimer here.",
   },
@@ -164,7 +164,7 @@ const shopItemsData = [
     name: "Reddy Navy Matching Throw Set for Dogs",
     brand: "Reddy",
     price: "$69.99",
-    "image-src": "images/Reddy Navy Matching Throw Set for Dogs.avif",
+    "image-src": "images/Reddy Navy Matching Throw Set for Dogs.png",
     description:
       "Snuggle up with your pup this winter with this Reddy Navy Matching Throw Set! The faux sherpa backing and water resistance keeps you and pup snug as two bugs in a rug on chilly winter outings!",
   },
@@ -180,7 +180,7 @@ const shopItemsData = [
     brand: "EveryYay",
     price: "$29.99",
     "image-src":
-      "images/EveryYay Slant Open Storage Container for Dogs, 20 lbs.avif",
+      "images/EveryYay Slant Open Storage Container for Dogs, 20 lbs.png",
     description:
       "Keep your food fresh with this Storage Container from EveryYay. Its airtight seal and latch helps keep food fresh and protected so your pet gets a fresh dish every time!",
   },
@@ -195,7 +195,7 @@ const shopItemsData = [
     name: "EveryYay Happy Place Plush Dog Mat, XX-Small",
     brand: "EveryYay",
     price: "$17.99",
-    "image-src": "images/EveryYay Happy Place Plush Dog Mat, XX-Small.avif",
+    "image-src": "images/EveryYay Happy Place Plush Dog Mat, XX-Small.png",
     description:
       "Complete your pet's haven with the EveryYay Happy Place Plush Dog Mat. This ultra-soft bedding creates a cozier, den-like experience so they can curl up for some better R&R.",
   },
@@ -211,7 +211,7 @@ const shopItemsData = [
     brand: "Good Lovin'",
     price: "$5.99",
     "image-src":
-      "images/Good Lovin' No Rawhide Pumpkin Flavored Puppy Teething Rings, 4.9 oz., Count of 4.avif",
+      "images/Good Lovin' No Rawhide Pumpkin Flavored Puppy Teething Rings, 4.9 oz., Count of 4.png",
     description:
       "We cannot guarantee the absence of trace impurities from soil, water, air or the ingredient supply chain in any product.",
   },
@@ -227,7 +227,7 @@ const shopItemsData = [
     brand: "Pet Honesty",
     price: "$30.99",
     "image-src":
-      "images/Pet Honesty Bladder Health Cranberry Soft Chews for Dogs, Count of 90.avif",
+      "images/Pet Honesty Bladder Health Cranberry Soft Chews for Dogs, Count of 90.png",
     description:
       "Please note that the product information displayed is provided by manufacturers, suppliers and other third parties and is not independently verified by Petco.Full disclaimer here.",
   },
@@ -242,7 +242,7 @@ const shopItemsData = [
     name: 'Reddy Weighted Pet Blanket, 50" L X 60" W',
     brand: "Reddy",
     price: "$49.99",
-    "image-src": "images/Reddy Weighted Pet Blanket.avif",
+    "image-src": "images/Reddy Weighted Pet Blanket.png",
     description:
       "The Reddy pet weighted blanket is designed to be warm and to provide gentle pressure to your pet, mimicking the feeling of being held.",
   },
@@ -257,7 +257,7 @@ const shopItemsData = [
     name: 'EveryYay Melange Orthopedic Dog Nester, 20" L X 17" W X 5.5" H',
     brand: "EveryYay",
     price: "$29.99",
-    "image-src": "images/EveryYay Melange Orthopedic Dog Nester.avif",
+    "image-src": "images/EveryYay Melange Orthopedic Dog Nester.png",
     description:
       "The Melange Orthopedic Nester from EveryYay features high bolsters to surround your pup with complete orthopedic comfort. The removable cover features a chic herringbone fabric and is machine washable.",
   },
@@ -272,7 +272,7 @@ const shopItemsData = [
     name: 'EveryYay Lavender Quilted Dog Throw, 40" L X 30" W',
     brand: "EveryYay",
     price: "$24.99",
-    "image-src": "images/EveryYay Lavender Quilted Dog Throw.avif",
+    "image-src": "images/EveryYay Lavender Quilted Dog Throw.png",
     description:
       "This soothing Lavender Throw from EveryYay will help your pet wind down in no time. As they gently snuggle into the blanket, the lavender scent is released, putting them right at ease and ready to take on a full night's sleep.",
   },

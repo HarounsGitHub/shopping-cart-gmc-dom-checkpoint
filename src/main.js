@@ -28,15 +28,12 @@ let generateShop = () => {
 
       return `
     <div class="item" id=item-id-${id}>
-        <img
-      width="200"
-      src="${imageSrc}"
-      alt="${name}"/>
-    <div class="details">
+    <img width="200" src="${imageSrc}" alt="${name}"/> 
+        <div class="details">
       <h3>${productLink}</h3>
       <div class="brand-like" id="brand-like">
         <a href="${productLinkHref}">${brand}</a> 
-        <button class="button-solid" onclick="toggleHeartIcon(event)" data-item-id="${id}">
+        <button class="button-solid" onclick="toggleHeartIcon('${id}')" data-item-id="${id}">
   <i class="bi bi-heart ${heartIconClass}"></i>
   <i class="bi bi-heart-fill ${filledHeartIconClass}"></i>
 </button>
@@ -127,15 +124,37 @@ calculation();
 
 // toggle button from heart to heart-fill icon & vise versa and save the state to local storage
 
-let toggleHeartIcon = (event) => {
-  let buttonElement = event.currentTarget;
+let toggleHeartIcon = (id) => {
+  // get the button element containing the heart icons
+  let buttonElement = document.getElementById(`item-id-${id}`);
+  // get the heart and filled heart icons
   let heartIcon = buttonElement.querySelector(".bi-heart");
   let filledHeartIcon = buttonElement.querySelector(".bi-heart-fill");
 
+  // toggle the visibility of the heart icons
   heartIcon.classList.toggle("hidden");
   filledHeartIcon.classList.toggle("hidden");
 
-  let itemId = buttonElement.getAttribute("data-item-id");
+  // determine if the heart is filled based on the visibility of the filled heart icon
   let isHeartFilled = !filledHeartIcon.classList.contains("hidden");
-  localStorage.setItem(`heart-${itemId}`, isHeartFilled);
+
+  // get the array of heart id's from local storage or create an empty array if it doesn't exist
+  let heartIds = JSON.parse(localStorage.getItem("heart-ids")) || [];
+
+  // add / remove the current id from the array based on the heart state
+  if (isHeartFilled) {
+    //add id if it's not already present in the array
+    if (!heartIds.includes(id)) {
+      heartIds.push(id);
+    }
+  } else {
+    // remove the id if it's present in the array
+    let index = heartIds.indexOf(id);
+    if (index !== -1) {
+      heartIds.splice(index, 1);
+    }
+  }
+
+  // update the heart IDs array in local storage
+  localStorage.setItem("heart-ids", JSON.stringify(heartIds));
 };
