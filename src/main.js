@@ -19,6 +19,13 @@ let generateShop = () => {
         "product-link-href": productLinkHref,
       } = x;
       let search = basket.find((x) => x.id === id) || [];
+
+      // Get the heart state data from local storage if available or set to set it to default
+      let storedValue = localStorage.getItem(`heart-${id}`);
+      let isHeartFilled = storedValue ? storedValue === "true" : false;
+      let heartIconClass = isHeartFilled ? "hidden" : "";
+      let filledHeartIconClass = isHeartFilled ? "" : "hidden";
+
       return `
     <div class="item" id=item-id-${id}>
         <img
@@ -29,9 +36,12 @@ let generateShop = () => {
       <h3>${productLink}</h3>
       <div class="brand-like" id="brand-like">
         <a href="${productLinkHref}">${brand}</a> 
-        <input type="checkbox" id="heart">
-        <label for="heart">&#9829</label>
-      </div>
+        <button class="button-solid" onclick="toggleHeartIcon(event)" data-item-id="${id}">
+  <i class="bi bi-heart ${heartIconClass}"></i>
+  <i class="bi bi-heart-fill ${filledHeartIconClass}"></i>
+</button>
+
+        </div>
       <p>
         ${description}
       </p>
@@ -114,3 +124,18 @@ let calculation = () => {
 
 // so everytime the web page loads calculation() runs & the cartAmount won't be initiated to 0
 calculation();
+
+// toggle button from heart to heart-fill icon & vise versa and save the state to local storage
+
+let toggleHeartIcon = (event) => {
+  let buttonElement = event.currentTarget;
+  let heartIcon = buttonElement.querySelector(".bi-heart");
+  let filledHeartIcon = buttonElement.querySelector(".bi-heart-fill");
+
+  heartIcon.classList.toggle("hidden");
+  filledHeartIcon.classList.toggle("hidden");
+
+  let itemId = buttonElement.getAttribute("data-item-id");
+  let isHeartFilled = !filledHeartIcon.classList.contains("hidden");
+  localStorage.setItem(`heart-${itemId}`, isHeartFilled);
+};

@@ -96,19 +96,9 @@ i {
   /* background-color: #ed1111; */
   /* color: #ed1111;
   box-sizing: 0 5px 0 #df0c0c; */
-  background-color: #ed1111;
 }
 /* some cool effect on buttons to give them so dopamine hits so they can buy more stuff = more $ *-**/
 /* hides the checkbox */
-input {
-  display: none;
-}
-
-/* changes the color when selected */
-input:checked ~ label {
-  color: red;
-  background-color: #ed1111;
-}
 
 /* for styling purpose only */
 label {
@@ -238,4 +228,21 @@ p {
   -webkit-box-orient: vertical;
   overflow: hidden;
   /* height: 306px; */
+}
+.button-solid {
+  border: none;
+  background-color: transparent;
+}
+.button-solid:focus {
+  border: none;
+  outline: none;
+}
+.bi-heart-fill {
+  color: red;
+  font-size: 25px;
+  margin: 3px;
+}
+
+.hidden {
+  display: none;
 }
